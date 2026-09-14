@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Що нового",
+    "description": "Усі випуски HyperTube Music і зміни в кожному з них, починаючи з нових."
+  },
+  "header": {
+    "title": "Що нового",
+    "description": "Усі випуски HyperTube Music і зміни в кожному з них, починаючи з нових. Оберіть версію, щоб завантажити її або прочитати більше на GitHub.",
+    "github": "Випуски на GitHub",
+    "feed": "Стрічка випусків"
+  },
+  "version": {
+    "latest": "Остання",
+    "prerelease": "Попередня",
+    "download": "Завантажити {{version}}",
+    "github": "Відкрити на GitHub",
+    "downloads_one": "{{formatted}} завантаження",
+    "downloads_few": "{{formatted}} завантаження",
+    "downloads_many": "{{formatted}} завантажень",
+    "downloads_other": "{{formatted}} завантаження",
+    "noNotes": "До цього випуску не написали нотаток."
+  },
+  "empty": {
+    "title": "Поки порожньо",
+    "description": "Перший випуск ще не опубліковано. Коли він вийде, його нотатки з'являться тут.",
+    "unavailableTitle": "Не вдалося завантажити список змін",
+    "unavailableDescription": "Не вдалося зв'язатися з GitHub, щоб отримати нотатки до випусків. Їх можна прочитати просто там.",
+    "action": "Відкрити випуски на GitHub"
+  }
+}

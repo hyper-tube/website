@@ -1,0 +1,235 @@
+{
+  "hero": {
+    "release": "Version {{version}} is out",
+    "releaseLink": "See what's new",
+    "titleStart": "YouTube Music,",
+    "titleEnd": "built for your desktop.",
+    "subtitle": "HyperTube Music is a native app for Windows, macOS and Linux. It opens in a moment, stays light on memory and looks like the rest of your computer.",
+    "download": "Download for {{platform}}",
+    "downloadGeneric": "Download",
+    "otherSystems": "Other systems",
+    "details": "Version {{version}} · {{size}} · Free and open source",
+    "detailsShort": "Version {{version}} · Free and open source"
+  },
+  "tour": {
+    "label": "App screens",
+    "pause": "Pause the tour",
+    "play": "Play the tour",
+    "alt": "HyperTube Music showing the {{screen}} screen",
+    "screens": {
+      "home": {
+        "name": "Home",
+        "caption": "Your mixes, new releases and picks for you, in a home page that is easy to browse."
+      },
+      "player": {
+        "name": "Now playing",
+        "caption": "A full player with the song's artwork, lyrics that keep time and your queue."
+      },
+      "library": {
+        "name": "Library",
+        "caption": "Playlists, albums, artists and uploads, sorted the way your account sorts them."
+      },
+      "search": {
+        "name": "Search",
+        "caption": "Songs, albums, artists and podcasts, with filters right under the search box."
+      },
+      "downloads": {
+        "name": "Downloads",
+        "caption": "Everything you saved for offline listening, ready even without a connection."
+      },
+      "settings": {
+        "name": "Settings",
+        "caption": "Pick a color, tune how music plays and choose how songs blend into each other."
+      }
+    }
+  },
+  "benchmarks": {
+    "eyebrow": "Why native matters",
+    "title": "Not a web page in disguise.",
+    "description": "Most desktop players for YouTube Music are web pages running inside a browser, some of them the YouTube Music website itself. HyperTube Music is a real app, so your computer does less work to play the same songs.",
+    "label": "Choose what to compare",
+    "metrics": {
+      "memory": "Memory",
+      "cpu": "Processor",
+      "startup": "Opening time"
+    },
+    "headline": {
+      "memory": "less memory than the next best",
+      "cpu": "less processor use than the next best",
+      "startup": "faster to open than the next best"
+    },
+    "own": {
+      "memory": "of memory while a song plays",
+      "cpu": "of one processor core while a song plays",
+      "startup": "to open, with the home page fully drawn"
+    },
+    "explain": {
+      "memory": "Memory used by all of the app's processes while a song plays.",
+      "cpu": "Average processor use, as a share of one core, while a song plays in the background.",
+      "startup": "Time from starting the app until its home page has finished drawing."
+    },
+    "apps": {
+      "hypertube": "HyperTube Music",
+      "limusic": "Limusic",
+      "ytubic": "YTubic",
+      "pear": "YouTube Music Desktop App",
+      "chrome": "YouTube Music in Chrome"
+    },
+    "stacks": {
+      "hypertube": "C++ and Qt",
+      "limusic": "Tauri",
+      "ytubic": "Tauri",
+      "pear": "Electron",
+      "chrome": "Browser tab"
+    },
+    "unavailable": "Plays music only with Premium",
+    "lowerIsBetter": "Lower is better",
+    "measured": "Measured on {{date}} on one Linux laptop (Intel Core i7-11800H, 32 GB), signed out, playing the same song. Medians of repeated runs."
+  },
+  "playground": {
+    "eyebrow": "Try it right here",
+    "title": "Poke around before you install.",
+    "description": "A quick look at some of the app's features. Pick one, press play and try it out.",
+    "label": "Features",
+    "window": "Interactive preview of HyperTube Music",
+    "credits": "The songs are in the public domain (CC0) and come from ccMixter and the Internet Archive.",
+    "features": {
+      "colors": {
+        "title": "Looks like it belongs",
+        "description": "The app picks up your desktop's accent color and follows light and dark mode. Prefer a color of your own? Pick one and the whole app changes with it."
+      },
+      "transitions": {
+        "title": "Songs that flow together",
+        "description": "Play without gaps, fade between songs, or let Smart transitions listen to each pair of songs and blend them at the right moment."
+      },
+      "lyrics": {
+        "title": "Lyrics that keep time",
+        "description": "Sing along with lyrics that follow the song line by line. Click a line to jump straight to it."
+      },
+      "offline": {
+        "title": "Your music, even offline",
+        "description": "Download songs, albums and playlists. When the connection drops, the app keeps playing what you saved."
+      },
+      "equalizer": {
+        "title": "Sound the way you like it",
+        "description": "A ten band equalizer with presets, and a volume control that sounds even all the way from quiet to loud."
+      }
+    },
+    "player": {
+      "play": "Play",
+      "pause": "Pause",
+      "previous": "Previous song",
+      "next": "Next song",
+      "like": "Like",
+      "unlike": "Remove like",
+      "seek": "Song position"
+    },
+    "colors": {
+      "title": "Appearance",
+      "mode": "Mode",
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark",
+      "accent": "Accent color",
+      "swatch": "Use color {{color}}",
+      "follow": "Follow the system color",
+      "followHint": "Uses the accent color of your desktop"
+    },
+    "transitions": {
+      "title": "Transitions",
+      "off": "Off",
+      "crossfade": "Crossfade",
+      "smart": "Smart",
+      "outgoing": "Now playing",
+      "incoming": "Up next",
+      "caption": {
+        "off": "One song ends, the next one starts. No gap in between.",
+        "crossfade": "The songs fade into each other over a few seconds.",
+        "smart": "Both songs share a tempo, so the app lines up their beats and mixes the next one in.",
+        "smartFade": "These songs have different beats, so the app blends them where the first one winds down.",
+        "nothingNext": "Nothing to play next. Download another song or stop pretending you are offline."
+      },
+      "preview": "Preview the transition"
+    },
+    "lyrics": {
+      "title": "Lyrics",
+      "source": "Lyrics by {{author}}",
+      "empty": "No lyrics",
+      "emptyHint": "This song has no lyrics.",
+      "jump": "Jump to this line",
+      "playWithLyrics": "Play {{title}}"
+    },
+    "offline": {
+      "title": "Downloads",
+      "offline": "Offline",
+      "simulate": "Pretend you are offline",
+      "download": "Download {{title}}",
+      "downloaded": "{{title}} is downloaded",
+      "unavailable": "Not downloaded"
+    },
+    "equalizer": {
+      "title": "Equalizer",
+      "enabled": "Equalizer",
+      "presets": {
+        "flat": "Flat",
+        "bass": "Bass boost",
+        "vocal": "Vocal",
+        "treble": "Treble boost"
+      },
+      "band": "{{frequency}} band, {{gain}} decibels"
+    }
+  },
+  "more": {
+    "eyebrow": "And there is more",
+    "title": "Everything you need, nothing you don't.",
+    "items": {
+      "podcasts": {
+        "title": "Podcasts",
+        "description": "Pick up episodes where you left off, save them for later and change the playback speed."
+      },
+      "videos": {
+        "title": "Music videos",
+        "description": "Switch a song to its music video right in the player, and back again."
+      },
+      "live": {
+        "title": "Live stations",
+        "description": "Tune in to live streams, clearly marked wherever they show up."
+      },
+      "controls": {
+        "title": "Media keys and tray",
+        "description": "Control music from your keyboard, your system's media controls or the tray."
+      },
+      "discord": {
+        "title": "Discord status",
+        "description": "Show what you are listening to on your Discord profile, if you want to."
+      },
+      "privacy": {
+        "title": "Private by default",
+        "description": "No tracking. Crash reports are off unless you turn them on."
+      },
+      "languages": {
+        "title": "Your language",
+        "description": "Available in English, Russian and Ukrainian, with more to come."
+      },
+      "openSource": {
+        "title": "Open source",
+        "description": "Every line of code is public on GitHub, free to read and improve."
+      }
+    }
+  },
+  "download": {
+    "title": "Ready when you are.",
+    "description": "Free for Windows, macOS and Linux. Choose your system and start listening in a minute.",
+    "label": "Choose your system",
+    "button": "Download for {{platform}}",
+    "other": "Also available as {{formats}}",
+    "all": "All downloads and install steps",
+    "version": "Version {{version}}, released {{date}}",
+    "unavailable": "There is no download for this system yet."
+  },
+  "faq": {
+    "title": "Questions, answered.",
+    "description": "The things people ask most before trying HyperTube Music.",
+    "all": "Read all questions"
+  }
+}

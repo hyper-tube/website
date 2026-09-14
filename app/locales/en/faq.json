@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "FAQ",
+    "description": "Answers to common questions about HyperTube Music: what it is, what it costs, which systems it runs on, privacy, offline listening and more."
+  },
+  "header": {
+    "title": "Questions and answers",
+    "description": "Everything people usually ask before and after installing HyperTube Music.",
+    "stillStuck": "Did not find your answer?",
+    "ask": "Ask on GitHub",
+    "sections": "Sections"
+  },
+  "categories": {
+    "start": "Getting started",
+    "privacy": "Account and privacy",
+    "features": "Features",
+    "help": "Help"
+  },
+  "items": {
+    "what-is": {
+      "question": "What is HyperTube Music?",
+      "answer": "HyperTube Music is a desktop app for listening to YouTube Music on Windows, macOS and Linux. Instead of showing the website inside a browser window, it is built as a real app for your computer, so it opens quickly, uses less memory and fits in with your other apps. It is an independent project and is not made by Google."
+    },
+    "free": {
+      "question": "Is it free?",
+      "answer": "Yes. HyperTube Music is free and open source under the GNU GPL v3 license. There are no paid plans and nothing is locked behind a purchase. You can read all of its code on <source>GitHub</source>."
+    },
+    "premium": {
+      "question": "Do I need YouTube Music Premium or an account?",
+      "answer": "No. You can browse and listen without a Premium subscription, and even without signing in. Signing in with your Google account brings in your library, playlists, likes and history, just like on YouTube Music."
+    },
+    "systems": {
+      "question": "Which systems does it run on?",
+      "answer": "Windows 10 (version 1809) or later on 64-bit PCs, macOS 14.4 or later on Macs with Apple silicon, and 64-bit Linux with glibc 2.38 or later, such as Ubuntu 24.04, Debian 13 or Fedora 39 and newer. On Linux you can pick an AppImage, a DEB package or an RPM package. Macs with Intel processors are not supported yet."
+    },
+    "updates": {
+      "question": "How do I update to a new version?",
+      "answer": "The app does not update itself yet. When a new version is out, get it from the <download>download page</download> and install it over the old one. Your settings, downloads and sign-in stay as they were. The <changelog>changelog</changelog> lists what changed in every version."
+    },
+    "sign-in": {
+      "question": "Is it safe to sign in with my Google account?",
+      "answer": "Signing in happens on Google's own sign-in page, shown inside the app. HyperTube Music never sees or saves your password. After you sign in, your session is kept only on your computer, and the app talks to YouTube directly, without any server of ours in between."
+    },
+    "data": {
+      "question": "Does HyperTube Music collect my data?",
+      "answer": "No. There are no analytics and no tracking. The only thing the app can send is a crash report, and only if you turn on Share crash reports and diagnostics in Settings. It is off unless you turn it on. Reports are built to leave out what you type, what you play and the addresses the app visits, but a crash report does include a snapshot of the app's memory at the moment it crashed. The <privacy>privacy policy</privacy> has the details."
+    },
+    "native": {
+      "question": "What does native mean, and why does it matter?",
+      "answer": "Most YouTube Music desktop apps are web pages running inside a hidden copy of a web browser, often the YouTube Music website itself. HyperTube Music is written in C++ with Qt, the same kind of technology many desktop apps use, and plays music without any web page at all. That is why it starts quickly, stays light on memory and battery, and follows your system, for example by using your accent color."
+    },
+    "offline": {
+      "question": "Can I listen offline?",
+      "answer": "Yes. You can download songs, albums and playlists to listen without an internet connection, and smart downloads can keep the music you play most ready for you. When there is no connection, the app opens on your downloads and plays what is saved on your computer."
+    },
+    "desktop": {
+      "question": "Does it work with media keys and my system's media controls?",
+      "answer": "Yes. Play, pause and skip work with your keyboard's media keys and show up in your system's media controls: the media overlay on Windows, Now Playing on macOS, and any media widget on Linux. The app can also live in the system tray, and an optional plugin shows what you are listening to on your Discord profile."
+    },
+    "macos": {
+      "question": "macOS says the app is damaged or cannot be opened. What should I do?",
+      "answer": "The app is not notarized by Apple yet, so macOS may block it the first time. Move the app to your Applications folder, open Terminal and run <code>xattr -dr com.apple.quarantine /Applications/ht-music.app</code>, then open the app again. You only need to do this once."
+    },
+    "problem": {
+      "question": "Something does not work. Where can I get help?",
+      "answer": "Please <issues>open an issue on GitHub</issues> and describe what happened and how to make it happen again. It helps a lot to attach the app's log file, which you can find in Settings, under Diagnostics."
+    }
+  }
+}

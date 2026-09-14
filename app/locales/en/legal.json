@@ -1,0 +1,85 @@
+{
+  "updated": "Last updated {{date}}",
+  "contents": "On this page",
+  "contact": "Questions about this document? <issues>Open an issue on GitHub</issues>.",
+  "terms": {
+    "meta": {
+      "title": "Terms of Service",
+      "description": "The terms for using the HyperTube Music app and this website."
+    },
+    "title": "Terms of Service",
+    "description": "These terms explain the rules for using the HyperTube Music app and this website. They are written to be read, so please take a few minutes.",
+    "sections": {
+      "about": {
+        "title": "About these terms",
+        "body": "These terms apply to the HyperTube Music desktop app and to this website. By downloading, installing or using either of them, you agree to these terms. If you do not agree, please do not use them.\n\nHyperTube Music is made by a group of independent contributors. In these terms, \"we\" and \"us\" means the people who maintain the project."
+      },
+      "service": {
+        "title": "What HyperTube Music is",
+        "body": "HyperTube Music is an open source app that lets you use YouTube Music on your computer. It is not made, endorsed or supported by Google or YouTube. We do not host, sell or own any of the music, videos, podcasts or artwork you find in the app. All of it comes from YouTube."
+      },
+      "youtube": {
+        "title": "Your use of YouTube",
+        "body": "When you use HyperTube Music, you are still using YouTube. That means YouTube's Terms of Service and Google's Terms of Service apply to you, including any limits they set on how their content can be used. You are responsible for following those terms and the laws where you live, for example when you download music to listen offline.\n\nGoogle may limit or close an account that breaks its rules. We have no control over that and cannot restore an account for you."
+      },
+      "license": {
+        "title": "License",
+        "body": "The app's source code is released under the GNU General Public License, version 3. You may use, study, change and share it under that license. Nothing in these terms takes away any right the license gives you. The HyperTube Music name and logo identify this project, so please do not use them in a way that suggests a changed copy is the official app."
+      },
+      "downloads": {
+        "title": "Where to get the app",
+        "body": "The official builds are published only on this website and on the project's GitHub page. Copies from anywhere else may have been changed, and we cannot vouch for them. Each release lists a SHA-256 checksum for every file, so you can check that a download has not been altered."
+      },
+      "warranty": {
+        "title": "No warranty",
+        "body": "HyperTube Music is provided as is, without any warranty. We work hard to make it reliable, but it may contain bugs. YouTube can also change how its service works at any time, which may stop some features from working until the app is updated."
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "body": "As far as the law allows, the people behind HyperTube Music are not responsible for any loss or damage that comes from using the app or this website, including lost data, interrupted listening or problems with your Google account."
+      },
+      "changes": {
+        "title": "Changes to these terms",
+        "body": "We may update these terms from time to time, for example when the app gains new features. The date at the top of this page shows when they last changed. If you keep using the app or the website after a change, you accept the updated terms."
+      }
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "What the HyperTube Music app and this website do with your information, in plain words."
+    },
+    "title": "Privacy Policy",
+    "description": "The short version: HyperTube Music has no accounts of its own, no ads and no tracking. Your music, your sign-in and your settings stay on your computer. Here are the details.",
+    "sections": {
+      "stored": {
+        "title": "What the app keeps on your computer",
+        "body": "To work, the app saves some things on your own computer: your settings, your sign-in session, the music you download, your listening history, cached artwork and a log file that helps with fixing problems. None of this is sent to us. Signing out removes your session, and removing the app's data folder removes everything else."
+      },
+      "google": {
+        "title": "Signing in with Google",
+        "body": "When you sign in, you do it on Google's own sign-in page, shown inside the app. The app never sees or stores your password. Your library, likes, playlists and history live in your Google account, and Google's Privacy Policy covers how Google handles them."
+      },
+      "connections": {
+        "title": "Who the app talks to",
+        "body": "The app connects directly to YouTube and Google to find and play music, show lyrics and keep your library in sync. There is no server of ours in between.\n\nAbout once a week, the app also reads a public list of Firefox versions from Mozilla. It uses this to keep Google's sign-in page working, and it sends nothing about you with that request.\n\nIf you turn on the Discord plugin, the app shares what you are playing with the Discord app running on your computer, which then shows it on your profile. The plugin is off unless you turn it on."
+      },
+      "crashes": {
+        "title": "Crash reports",
+        "body": "Crash reports are off unless you turn on Share crash reports and diagnostics in Settings. When they are on, the app sends reports of crashes and serious errors to a server run by the HyperTube Music project.\n\nA report includes the app version, basic facts about your system such as the operating system and graphics, the state of the app such as which page was open, whether you were signed in and online, your language and which plugins were on, and the names of the last few actions. Reports are built to leave out what you type, what you play and the addresses the app visits. A crash report also includes a snapshot of part of the app's memory at the moment it crashed, which could contain information that was on screen.\n\nReports are used only to find and fix problems, and are deleted after 90 days. Turning the option off stops all sending, including any report that was waiting to be sent."
+      },
+      "website": {
+        "title": "This website",
+        "body": "This website does not use analytics, ads or tracking scripts, and does not load anything from other companies' servers while you browse. It sets two small cookies that remember your theme and your language for one year.\n\nOur server logs which page was asked for and how long it took to answer, without your IP address. The company that hosts the site may keep standard access logs of its own. The list of releases and the star count are fetched from GitHub by our server, and the download files themselves are served by GitHub when you download them."
+      },
+      "children": {
+        "title": "Children",
+        "body": "HyperTube Music is not meant for children who are too young to have a Google account where they live. It does not knowingly collect information about anyone."
+      },
+      "changes": {
+        "title": "Changes to this policy",
+        "body": "If the app or the website starts handling information differently, we will update this page before that change is released. The date at the top shows when it last changed."
+      }
+    }
+  }
+}

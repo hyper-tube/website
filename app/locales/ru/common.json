@@ -1,0 +1,44 @@
+{
+  "site": {
+    "title": "HyperTube Music - нативное приложение YouTube Music для компьютера",
+    "description": "HyperTube Music - бесплатное приложение YouTube Music с открытым кодом для Windows, macOS и Linux. Оно нативное, поэтому быстро запускается, расходует мало памяти и выглядит как родное для вашей системы."
+  },
+  "nav": {
+    "home": "Главная",
+    "download": "Скачать",
+    "changelog": "Что нового",
+    "faq": "Вопросы",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности"
+  },
+  "header": {
+    "github": "GitHub",
+    "githubLabel": "{{repository}} на GitHub",
+    "toggleTheme": "Переключить светлую и тёмную тему",
+    "language": "Язык"
+  },
+  "a11y": {
+    "navigation": "Основная навигация",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню"
+  },
+  "actions": {
+    "home": "На главную",
+    "back": "Назад",
+    "retry": "Попробовать снова",
+    "copied": "Скопировано"
+  },
+  "footer": {
+    "tagline": "Нативное приложение YouTube Music для Windows, macOS и Linux. Бесплатное, с открытым кодом и сделанное с любовью.",
+    "product": "Продукт",
+    "project": "Проект",
+    "legal": "Правовая информация",
+    "links": {
+      "source": "Исходный код",
+      "issues": "Сообщить о проблеме",
+      "releases": "Все выпуски на GitHub",
+      "license": "Лицензия"
+    },
+    "disclaimer": "HyperTube Music - независимый проект. Он не связан с Google или YouTube, не одобрен и не спонсируется ими. YouTube и YouTube Music являются товарными знаками Google LLC."
+  }
+}

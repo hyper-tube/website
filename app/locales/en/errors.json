@@ -1,0 +1,10 @@
+{
+  "notFound": {
+    "title": "Page not found",
+    "description": "This page does not exist or has been moved. Check the address, or head back to the home page."
+  },
+  "default": {
+    "title": "Something went wrong",
+    "description": "The page could not be loaded. Please try again in a moment."
+  }
+}

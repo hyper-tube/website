@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Download",
+    "description": "Download HyperTube Music for Windows, macOS and Linux. Free and open source.",
+    "versionTitle": "Download version {{version}}",
+    "versionDescription": "Download HyperTube Music {{version}} for Windows, macOS and Linux."
+  },
+  "header": {
+    "title": "Download HyperTube Music",
+    "versionTitle": "HyperTube Music {{version}}",
+    "subtitle": "Free and open source, for Windows, macOS and Linux. Pick your system below and you are a minute away from listening.",
+    "released": "Version {{version}}, released {{date}}",
+    "prerelease": "Pre-release",
+    "whatsNew": "What's new",
+    "viewOnGitHub": "View on GitHub",
+    "olderVersion": "This is an older version of HyperTube Music.",
+    "latestLink": "Get the latest version, {{version}}"
+  },
+  "platforms": {
+    "label": "Downloads by system",
+    "yourSystem": "Your system",
+    "unavailable": "There is no download for this system in this version.",
+    "windows": {
+      "name": "Windows",
+      "requirements": "Windows 10 (version 1809) or later, 64-bit"
+    },
+    "macos": {
+      "name": "macOS",
+      "requirements": "macOS 14.4 or later, on a Mac with Apple silicon"
+    },
+    "linux": {
+      "name": "Linux",
+      "requirements": "64-bit, with glibc 2.38 or later: Ubuntu 24.04, Debian 13, Fedora 39 and newer"
+    }
+  },
+  "formats": {
+    "exe": {
+      "name": "Installer",
+      "tab": "Windows",
+      "hint": "The easiest way to install"
+    },
+    "dmg": {
+      "name": "Disk image",
+      "tab": "macOS",
+      "hint": "Drag the app into Applications"
+    },
+    "appimage": {
+      "name": "AppImage",
+      "tab": "AppImage",
+      "hint": "Runs on most distributions without installing"
+    },
+    "deb": {
+      "name": "DEB package",
+      "tab": ".deb",
+      "hint": "For Ubuntu, Debian, Linux Mint and similar"
+    },
+    "rpm": {
+      "name": "RPM package",
+      "tab": ".rpm",
+      "hint": "For Fedora and similar"
+    }
+  },
+  "arch": {
+    "x64": "64-bit",
+    "arm64": "Apple silicon"
+  },
+  "asset": {
+    "download": "Download",
+    "downloadLabel": "Download {{file}}",
+    "checksum": "SHA-256",
+    "copyChecksum": "Copy the SHA-256 checksum of {{file}}",
+    "checksums": "Checksums for every file"
+  },
+  "install": {
+    "title": "How to install",
+    "description": "Pick the file you downloaded to see the steps.",
+    "label": "Installation steps by file",
+    "copyCommand": "Copy command",
+    "exe": {
+      "run": "Open the installer you downloaded.",
+      "smartscreen": "If Windows says it protected your PC, select More info, then Run anyway. This happens because the app is not signed with a paid certificate yet.",
+      "launch": "Follow the steps, then start HyperTube Music from the Start menu."
+    },
+    "dmg": {
+      "open": "Open the disk image you downloaded.",
+      "drag": "Drag HyperTube Music into your Applications folder.",
+      "quarantine": "If macOS says the app is damaged or cannot be checked, run this command in Terminal once and open the app again. This happens because the app is not notarized by Apple yet."
+    },
+    "appimage": {
+      "permission": "Allow the file to run.",
+      "run": "Start the app. In most file managers you can also just double click the file."
+    },
+    "deb": {
+      "install": "Install the package. Everything it needs is installed with it.",
+      "launch": "Start HyperTube Music from your app menu."
+    },
+    "rpm": {
+      "install": "Install the package. Everything it needs is installed with it.",
+      "launch": "Start HyperTube Music from your app menu."
+    }
+  },
+  "history": {
+    "title": "Previous releases",
+    "otherTitle": "Other releases",
+    "description": "Older versions stay here in case you need one.",
+    "downloads": "Downloads for {{version}}",
+    "notes": "Release notes",
+    "latest": "Latest",
+    "prerelease": "Pre-release"
+  },
+  "empty": {
+    "title": "No releases yet",
+    "description": "The first version has not been published yet. Watch the project on GitHub to hear when it is out.",
+    "unavailableTitle": "Downloads could not be loaded",
+    "unavailableDescription": "We could not reach GitHub to get the list of releases. Every version is also available there directly.",
+    "action": "Open releases on GitHub"
+  }
+}

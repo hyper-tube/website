@@ -1,0 +1,44 @@
+{
+  "site": {
+    "title": "HyperTube Music - A native YouTube Music app for your desktop",
+    "description": "HyperTube Music is a free, open source YouTube Music app for Windows, macOS and Linux. It is built natively, so it starts fast, uses little memory and feels at home on your desktop."
+  },
+  "nav": {
+    "home": "Home",
+    "download": "Download",
+    "changelog": "Changelog",
+    "faq": "FAQ",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "header": {
+    "github": "GitHub",
+    "githubLabel": "{{repository}} on GitHub",
+    "toggleTheme": "Switch between light and dark theme",
+    "language": "Language"
+  },
+  "a11y": {
+    "navigation": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "actions": {
+    "home": "Go home",
+    "back": "Go back",
+    "retry": "Try again",
+    "copied": "Copied"
+  },
+  "footer": {
+    "tagline": "A native YouTube Music app for Windows, macOS and Linux. Free, open source and made with care.",
+    "product": "Product",
+    "project": "Project",
+    "legal": "Legal",
+    "links": {
+      "source": "Source code",
+      "issues": "Report a problem",
+      "releases": "All releases on GitHub",
+      "license": "License"
+    },
+    "disclaimer": "HyperTube Music is an independent project and is not affiliated with, endorsed by or sponsored by Google or YouTube. YouTube and YouTube Music are trademarks of Google LLC."
+  }
+}

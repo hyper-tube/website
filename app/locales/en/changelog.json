@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Changelog",
+    "description": "Every HyperTube Music release and what changed in it, newest first."
+  },
+  "header": {
+    "title": "Changelog",
+    "description": "Every release of HyperTube Music and what changed in it, newest first. Pick a version to download it or read more on GitHub.",
+    "github": "Releases on GitHub",
+    "feed": "Release feed"
+  },
+  "version": {
+    "latest": "Latest",
+    "prerelease": "Pre-release",
+    "download": "Download {{version}}",
+    "github": "View on GitHub",
+    "downloads_one": "{{formatted}} download",
+    "downloads_other": "{{formatted}} downloads",
+    "noNotes": "No notes were written for this release."
+  },
+  "empty": {
+    "title": "Nothing here yet",
+    "description": "The first release has not been published. When it is, its notes will show up here.",
+    "unavailableTitle": "The changelog could not be loaded",
+    "unavailableDescription": "We could not reach GitHub to get the release notes. You can read them there directly.",
+    "action": "Open releases on GitHub"
+  }
+}

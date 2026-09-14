@@ -1,0 +1,335 @@
+@import 'tailwindcss';
+@import './styles/palette.css';
+@import './styles/fonts.css';
+
+@custom-variant dark {
+  &:where([data-theme='dark'], [data-theme='dark'] *) {
+    @slot;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:where([data-theme='system'], [data-theme='system'] *) {
+      @slot;
+    }
+  }
+}
+
+@theme {
+  --radius-*: initial;
+  --shadow-*: initial;
+  --text-*: initial;
+  --ease-*: initial;
+
+  --font-sans: 'Roboto Flex', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'JetBrains Mono', monospace;
+
+  --radius-unsharpen: 2px;
+  --radius-verysmall: 8px;
+  --radius-small: 12px;
+  --radius-normal: 17px;
+  --radius-large: 23px;
+  --radius-verylarge: 30px;
+  --radius-huge: 44px;
+  --radius-full: 9999px;
+
+  --ease-expressive-fast: cubic-bezier(0.42, 1.67, 0.21, 0.9);
+  --ease-expressive: cubic-bezier(0.38, 1.21, 0.22, 1);
+  --ease-expressive-slow: cubic-bezier(0.39, 1.29, 0.35, 0.98);
+  --ease-effects: cubic-bezier(0.34, 0.8, 0.34, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized-decel: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --ease-emphasized-accel: cubic-bezier(0.3, 0, 0.8, 0.15);
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  --shadow-level1: 0 1px 2px 0 rgb(0 0 0 / 0.3), 0 1px 3px 1px rgb(0 0 0 / 0.15);
+  --shadow-level2: 0 1px 2px 0 rgb(0 0 0 / 0.3), 0 2px 6px 2px rgb(0 0 0 / 0.15);
+  --shadow-level3: 0 4px 8px 3px rgb(0 0 0 / 0.15), 0 1px 3px 0 rgb(0 0 0 / 0.3);
+  --shadow-level4: 0 6px 10px 4px rgb(0 0 0 / 0.15), 0 2px 3px 0 rgb(0 0 0 / 0.3);
+
+  --text-hero: clamp(2.75rem, 1.4rem + 5.6vw, 6rem);
+  --text-hero--line-height: 1;
+  --text-hero--letter-spacing: -0.035em;
+  --text-hero--font-weight: 620;
+
+  --text-display-large: clamp(2.5rem, 1.6rem + 3.2vw, 3.5625rem);
+  --text-display-large--line-height: 1.08;
+  --text-display-large--letter-spacing: -0.025em;
+  --text-display-large--font-weight: 600;
+
+  --text-display-medium: clamp(2.125rem, 1.5rem + 2.2vw, 2.8125rem);
+  --text-display-medium--line-height: 1.12;
+  --text-display-medium--letter-spacing: -0.02em;
+  --text-display-medium--font-weight: 580;
+
+  --text-display-small: clamp(1.875rem, 1.5rem + 1.4vw, 2.25rem);
+  --text-display-small--line-height: 1.2;
+  --text-display-small--letter-spacing: -0.015em;
+  --text-display-small--font-weight: 560;
+
+  --text-headline-large: 2rem;
+  --text-headline-large--line-height: 2.5rem;
+  --text-headline-large--letter-spacing: -0.01em;
+  --text-headline-large--font-weight: 550;
+
+  --text-headline-medium: 1.75rem;
+  --text-headline-medium--line-height: 2.25rem;
+  --text-headline-medium--font-weight: 550;
+
+  --text-headline-small: 1.5rem;
+  --text-headline-small--line-height: 2rem;
+  --text-headline-small--font-weight: 550;
+
+  --text-title-large: 1.375rem;
+  --text-title-large--line-height: 1.75rem;
+  --text-title-large--font-weight: 550;
+
+  --text-title-medium: 1rem;
+  --text-title-medium--line-height: 1.5rem;
+  --text-title-medium--letter-spacing: 0.009em;
+  --text-title-medium--font-weight: 550;
+
+  --text-title-small: 0.875rem;
+  --text-title-small--line-height: 1.25rem;
+  --text-title-small--letter-spacing: 0.007em;
+  --text-title-small--font-weight: 550;
+
+  --text-body-large: 1rem;
+  --text-body-large--line-height: 1.5rem;
+  --text-body-large--letter-spacing: 0.009em;
+  --text-body-large--font-weight: 450;
+
+  --text-body-medium: 0.875rem;
+  --text-body-medium--line-height: 1.25rem;
+  --text-body-medium--letter-spacing: 0.018em;
+  --text-body-medium--font-weight: 450;
+
+  --text-body-small: 0.75rem;
+  --text-body-small--line-height: 1rem;
+  --text-body-small--letter-spacing: 0.033em;
+  --text-body-small--font-weight: 450;
+
+  --text-label-large: 0.875rem;
+  --text-label-large--line-height: 1.25rem;
+  --text-label-large--letter-spacing: 0.007em;
+  --text-label-large--font-weight: 550;
+
+  --text-label-medium: 0.75rem;
+  --text-label-medium--line-height: 1rem;
+  --text-label-medium--letter-spacing: 0.04em;
+  --text-label-medium--font-weight: 550;
+
+  --text-label-small: 0.6875rem;
+  --text-label-small--line-height: 1rem;
+  --text-label-small--letter-spacing: 0.045em;
+  --text-label-small--font-weight: 550;
+
+  --animate-playing-bar: playing-bar 900ms ease-in-out infinite alternate;
+
+  @keyframes playing-bar {
+    from {
+      scale: 1 0.3;
+    }
+
+    to {
+      scale: 1 1;
+    }
+  }
+}
+
+@layer base {
+  html {
+    background-color: var(--md-background);
+    color: var(--md-on-background);
+    font-weight: 450;
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-color: var(--md-outline-variant) transparent;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: var(--md-primary-container);
+    color: var(--md-on-primary-container);
+  }
+
+  :where(a, button, summary, input, [role='button'], [tabindex]):focus-visible {
+    outline: 2px solid var(--md-primary);
+    outline-offset: 2px;
+  }
+
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+}
+
+@utility state-layer {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background-color: currentColor;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms var(--ease-effects);
+  }
+
+  @media (hover: hover) {
+    &:hover::before {
+      opacity: 0.08;
+    }
+  }
+
+  &:focus-visible::before,
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &:where(:disabled, [aria-disabled='true'])::before {
+    opacity: 0;
+  }
+}
+
+@utility container-page {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem;
+  }
+}
+
+@layer components {
+  .ripple {
+    position: absolute;
+    border-radius: 9999px;
+    background-color: currentColor;
+    pointer-events: none;
+    transform: scale(0);
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .hero-word {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+
+    &::before {
+      content: attr(data-word);
+      visibility: hidden;
+      font-variation-settings:
+        'wght' 620,
+        'wdth' 100;
+    }
+  }
+
+  .hero-word-glyphs {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    font-variation-settings:
+      'wght' 620,
+      'wdth' 100;
+    transition: font-variation-settings 600ms var(--ease-expressive);
+    animation: hero-word 1100ms var(--ease-expressive-slow) backwards;
+    animation-delay: calc(var(--word-index, 0) * 70ms + 80ms);
+  }
+
+  @media (hover: hover) {
+    .hero-word:hover .hero-word-glyphs {
+      font-variation-settings:
+        'wght' 850,
+        'wdth' 65;
+    }
+  }
+
+  @keyframes hero-word {
+    from {
+      opacity: 0;
+      translate: 0 0.3em;
+      font-variation-settings:
+        'wght' 250,
+        'wdth' 30;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-word-glyphs {
+      animation: none;
+      transition: none;
+    }
+  }
+}
+
+@layer components {
+  @supports (animation-timeline: view()) {
+    .tour-tilt-timeline {
+      view-timeline: --tour-tilt block;
+    }
+
+    .tour-tilt {
+      animation: tour-tilt linear both;
+      animation-timeline: --tour-tilt;
+      animation-range: cover 0% cover 80vh;
+    }
+  }
+
+  @keyframes tour-tilt {
+    from {
+      transform: rotateX(22deg) scale(0.9);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tour-tilt {
+      animation: none;
+    }
+  }
+}
+
+@layer components {
+  @supports (animation-timeline: view()) {
+    .scroll-reveal {
+      animation: scroll-reveal var(--ease-emphasized-decel) both;
+      animation-timeline: view();
+      animation-range: entry calc(var(--reveal-index, 0) * 6%) entry
+        calc(70% + var(--reveal-index, 0) * 6%);
+    }
+  }
+
+  @keyframes scroll-reveal {
+    from {
+      opacity: 0;
+      translate: 0 2rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+      animation: none;
+    }
+  }
+}

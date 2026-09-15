@@ -17,8 +17,6 @@ export function NavBar() {
   return (
     <header className={cn(HEADER, scrolled ? 'bg-surface-container' : 'bg-surface')}>
       <div className="container-page flex h-16 items-center gap-1">
-        <MobileMenuButton className="-ml-2 md:hidden" />
-
         <Brand />
         <NavLinks className="ml-6 hidden md:flex" />
 
@@ -26,6 +24,7 @@ export function NavBar() {
           <GitHubStars className="mr-1 hidden sm:inline-flex" />
           <ThemeToggle />
           <LanguageMenu />
+          <MobileMenuButton className="-mr-2 md:hidden" />
         </div>
       </div>
 

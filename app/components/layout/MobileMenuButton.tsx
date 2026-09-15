@@ -1,9 +1,10 @@
-import MenuIcon from '~icons/material-symbols/menu-rounded';
+import MenuIcon from '~icons/material-symbols/dehaze-rounded';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router';
 import { useState } from 'react';
 
 import { Button } from '~/components/ui/Button';
+import { cn } from '~/lib/styles.shared';
 
 import { NavigationDrawer } from './NavigationDrawer';
 
@@ -30,7 +31,7 @@ export function MobileMenuButton({ className }: MobileMenuButtonProps) {
         icon
         aria-label={t('a11y.openMenu')}
         onClick={() => setOpen(true)}
-        className={className}
+        className={cn('[&_svg]:size-6', className)}
       >
         <MenuIcon aria-hidden />
       </Button>

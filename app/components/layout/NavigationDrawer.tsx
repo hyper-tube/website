@@ -24,7 +24,7 @@ const scrimVariants = {
 } satisfies Variants;
 
 const panelVariants = {
-  closed: { x: '-100%', transition: { duration: 0.3, ease: TRANSITIONS.exit.ease } },
+  closed: { x: '100%', transition: { duration: 0.3, ease: TRANSITIONS.exit.ease } },
   open: { x: 0, transition: TRANSITIONS.emphasized },
 } satisfies Variants;
 
@@ -34,8 +34,8 @@ const reducedPanelVariants = {
 } satisfies Variants;
 
 const PANEL = cn(
-  'absolute inset-y-0 left-0 flex w-80 max-w-[85vw] flex-col gap-2 overflow-y-auto',
-  'rounded-r-large bg-surface-container-low p-3 text-on-surface shadow-level3',
+  'absolute inset-y-0 right-0 flex w-80 max-w-[85vw] flex-col gap-2 overflow-y-auto',
+  'rounded-l-large bg-surface-container-low p-3 text-on-surface shadow-level3',
   'pt-[calc(0.75rem+env(safe-area-inset-top))] pb-[calc(0.75rem+env(safe-area-inset-bottom))]',
 );
 

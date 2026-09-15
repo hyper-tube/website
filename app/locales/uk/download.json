@@ -69,7 +69,7 @@
     "downloadLabel": "Завантажити {{file}}",
     "checksum": "SHA-256",
     "copyChecksum": "Скопіювати контрольну суму SHA-256 файлу {{file}}",
-    "checksums": "Контрольні суми всіх файлів"
+    "checksums": "Завантажити контрольні суми"
   },
   "install": {
     "title": "Як встановити",

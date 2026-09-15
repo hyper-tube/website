@@ -69,7 +69,7 @@
     "downloadLabel": "Download {{file}}",
     "checksum": "SHA-256",
     "copyChecksum": "Copy the SHA-256 checksum of {{file}}",
-    "checksums": "Checksums for every file"
+    "checksums": "Download checksums"
   },
   "install": {
     "title": "How to install",

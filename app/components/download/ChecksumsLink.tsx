@@ -1,4 +1,4 @@
-import VerifiedIcon from '~icons/material-symbols/verified-user-outline-rounded';
+import DownloadIcon from '~icons/material-symbols/download-rounded';
 import { useTranslation } from 'react-i18next';
 
 import { INLINE_LINK } from '~/components/ui/link.styles';
@@ -16,7 +16,7 @@ export function ChecksumsLink({ url }: ChecksumsLinkProps) {
       href={url}
       className={cn(INLINE_LINK, 'inline-flex items-center gap-2 self-start text-label-large')}
     >
-      <VerifiedIcon aria-hidden className="size-5" />
+      <DownloadIcon aria-hidden className="size-5" />
       {t('asset.checksums')}
     </a>
   );

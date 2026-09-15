@@ -6,6 +6,7 @@ import { formatCompact } from '~/lib/format.shared';
 import type { ReleaseSummary } from '~/lib/releases.shared';
 import { ButtonAnchor } from '~/components/ui/ButtonAnchor';
 import { ButtonLink } from '~/components/ui/ButtonLink';
+import { Divider } from '~/components/ui/Divider';
 
 interface VersionActionsProps {
   release: ReleaseSummary;
@@ -20,18 +21,22 @@ export function VersionActions({ release }: VersionActionsProps) {
   });
 
   return (
-    <footer className="mt-8 flex flex-wrap items-center gap-2 border-t border-outline-variant pt-5">
-      <ButtonLink to={`/download/${release.version}`} variant="tonal" size="sm">
-        <DownloadIcon aria-hidden />
-        {t('version.download', { version: release.version })}
-      </ButtonLink>
+    <footer className="mt-8 flex flex-col gap-4">
+      <Divider variant="wavy" />
 
-      <ButtonAnchor href={release.url} external variant="text" size="sm">
-        {t('version.github')}
-        <OpenInNewIcon aria-hidden />
-      </ButtonAnchor>
+      <div className="flex flex-wrap items-center gap-2">
+        <ButtonLink to={`/download/${release.version}`} variant="tonal" size="sm">
+          <DownloadIcon aria-hidden />
+          {t('version.download', { version: release.version })}
+        </ButtonLink>
 
-      <span className="ml-auto text-body-small text-on-surface-variant">{downloads}</span>
+        <ButtonAnchor href={release.url} external variant="text" size="sm">
+          {t('version.github')}
+          <OpenInNewIcon aria-hidden />
+        </ButtonAnchor>
+
+        <span className="ml-auto text-body-small text-on-surface-variant">{downloads}</span>
+      </div>
     </footer>
   );
 }

@@ -206,6 +206,12 @@
   }
 }
 
+@utility wavy-line {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='8'%3E%3Cpath d='M0 2C4.37 2 7.63 6 12 6S19.63 2 24 2' fill='none' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+  mask-size: 24px 100%;
+  mask-repeat: round no-repeat;
+}
+
 @utility section-spacing {
   padding-block: 3rem;
 

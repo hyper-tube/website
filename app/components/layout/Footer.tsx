@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 import { footerColumns } from '~/lib/navigation.shared';
+import { Divider } from '~/components/ui/Divider';
 import { useSite } from '~/hooks/useSite';
 import { cn } from '~/lib/styles.shared';
 
@@ -12,7 +13,7 @@ const GRID = cn(
   'md:grid-cols-[1.6fr_repeat(3,1fr)] md:gap-12 md:pt-14 md:pb-10',
 );
 
-const BOTTOM = 'border-t border-outline-variant/50 py-6 text-body-small text-on-surface-variant';
+const DISCLAIMER = 'py-6 text-body-small text-on-surface-variant';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -29,9 +30,8 @@ export function Footer() {
       </div>
 
       <div className="container-page">
-        <div className={BOTTOM}>
-          <p>{t('footer.disclaimer')}</p>
-        </div>
+        <Divider variant="wavy" className="bg-outline-variant/50" />
+        <p className={DISCLAIMER}>{t('footer.disclaimer')}</p>
       </div>
     </footer>
   );

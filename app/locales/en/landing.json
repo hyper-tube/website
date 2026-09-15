@@ -92,7 +92,6 @@
     "description": "A quick look at some of the app's features. Pick one, press play and try it out.",
     "label": "Features",
     "window": "Interactive preview of HyperTube Music",
-    "credits": "The songs are in the public domain (CC0) and come from ccMixter and the Internet Archive.",
     "features": {
       "colors": {
         "title": "Looks like it belongs",

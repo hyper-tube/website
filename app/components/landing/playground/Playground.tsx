@@ -43,17 +43,12 @@ export function Playground() {
       <DemoPlayerProvider active={inView && pageVisible}>
         <div className={LAYOUT}>
           <FeatureList value={feature} onChange={pickFeature} />
-          <div className="flex flex-col gap-3 max-lg:order-first lg:sticky lg:top-28">
-            <DemoWindow
-              ref={windowRef}
-              feature={feature}
-              onFeatureChange={setFeature}
-              className="max-lg:scroll-mt-24"
-            />
-            <p className="px-2 text-body-small text-on-surface-variant">
-              {t('playground.credits')}
-            </p>
-          </div>
+          <DemoWindow
+            ref={windowRef}
+            feature={feature}
+            onFeatureChange={setFeature}
+            className="max-lg:order-first max-lg:scroll-mt-24 lg:sticky lg:top-28"
+          />
         </div>
       </DemoPlayerProvider>
     </section>

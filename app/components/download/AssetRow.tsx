@@ -1,6 +1,7 @@
 import DownloadIcon from '~icons/material-symbols/download-rounded';
 import { useTranslation } from 'react-i18next';
 
+import type { ButtonVariants } from '~/components/ui/button.variants';
 import { ButtonAnchor } from '~/components/ui/ButtonAnchor';
 import type { ReleaseAsset } from '~/lib/releases.shared';
 import { formatBytes } from '~/lib/format.shared';
@@ -15,10 +16,10 @@ const ROW = cn(
 
 interface AssetRowProps {
   asset: ReleaseAsset;
-  emphasized: boolean;
+  variant: ButtonVariants['variant'];
 }
 
-export function AssetRow({ asset, emphasized }: AssetRowProps) {
+export function AssetRow({ asset, variant }: AssetRowProps) {
   const { t, i18n } = useTranslation('download');
 
   const details = [t(`arch.${asset.arch}`), formatBytes(asset.size, i18n.language)].join(' · ');
@@ -36,7 +37,7 @@ export function AssetRow({ asset, emphasized }: AssetRowProps) {
 
         <ButtonAnchor
           href={asset.url}
-          variant={emphasized ? 'filled' : 'tonal'}
+          variant={variant}
           aria-label={t('asset.downloadLabel', { file: asset.name })}
         >
           <DownloadIcon aria-hidden />

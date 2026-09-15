@@ -13,6 +13,7 @@ export const button = tv({
     variant: {
       filled: 'bg-primary text-on-primary',
       tonal: 'bg-secondary-container text-on-secondary-container',
+      tinted: 'bg-current/12',
       outlined: 'border border-outline-variant text-on-surface-variant',
       text: 'text-primary',
       elevated: 'bg-surface-container-low text-primary shadow-level1',

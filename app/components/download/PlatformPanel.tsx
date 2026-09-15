@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useId } from 'react';
 
 import type { PlatformDownloads } from '~/lib/releases.shared';
+import type { ButtonVariants } from '~/components/ui/button.variants';
 import { PlatformIcon } from '~/components/ui/PlatformIcon';
 import { tv } from '~/lib/styles.shared';
 
@@ -21,6 +22,12 @@ const panel = tv({
     },
   },
 });
+
+function downloadVariant(recommended: boolean, index: number): ButtonVariants['variant'] {
+  if (!recommended) return 'tonal';
+
+  return index === 0 ? 'filled' : 'tinted';
+}
 
 export function PlatformPanel({ group, recommended }: PlatformPanelProps) {
   const { t } = useTranslation('download');
@@ -47,7 +54,11 @@ export function PlatformPanel({ group, recommended }: PlatformPanelProps) {
       {group.assets.length > 0 ? (
         <ul className="mt-4 flex flex-col">
           {group.assets.map((asset, index) => (
-            <AssetRow key={asset.name} asset={asset} emphasized={recommended && index === 0} />
+            <AssetRow
+              key={asset.name}
+              asset={asset}
+              variant={downloadVariant(recommended, index)}
+            />
           ))}
         </ul>
       ) : (

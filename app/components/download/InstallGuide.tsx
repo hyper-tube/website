@@ -1,9 +1,10 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
-import { useId, useState } from 'react';
+import { useId, useRef, useState } from 'react';
 
 import { primaryAsset, type ReleaseAsset } from '~/lib/releases.shared';
 import { useMotionTransition } from '~/hooks/useMotionTransition';
+import { useElementHeight } from '~/hooks/useElementHeight';
 import type { PackageFormat, PlatformId } from '~/lib/platforms.shared';
 import { panelId, tabId, Tabs } from '~/components/ui/Tabs';
 import { TRANSITIONS } from '~/lib/motion.shared';
@@ -28,7 +29,11 @@ function initialFormat(assets: readonly ReleaseAsset[], platform: PlatformId | n
 export function InstallGuide({ assets, platform }: InstallGuideProps) {
   const { t } = useTranslation('download');
   const transition = useMotionTransition(TRANSITIONS.enter);
+  const heightTransition = useMotionTransition(TRANSITIONS.emphasized);
   const idPrefix = useId().replaceAll(':', '');
+
+  const contentRef = useRef<HTMLDivElement>(null);
+  const height = useElementHeight(contentRef);
 
   const [format, setFormat] = useState<PackageFormat | undefined>(() =>
     initialFormat(assets, platform),
@@ -55,18 +60,27 @@ export function InstallGuide({ assets, platform }: InstallGuideProps) {
           label={t('install.label')}
         />
 
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div
-            key={format}
-            role="tabpanel"
-            id={panelId(idPrefix, format)}
-            aria-labelledby={tabId(idPrefix, format)}
-            {...PANEL_MOTION}
-            transition={transition}
-          >
-            <InstallSteps asset={asset} />
-          </motion.div>
-        </AnimatePresence>
+        <motion.div
+          initial={false}
+          animate={{ height: height ?? 'auto' }}
+          transition={heightTransition}
+          className="overflow-clip"
+        >
+          <div ref={contentRef}>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={format}
+                role="tabpanel"
+                id={panelId(idPrefix, format)}
+                aria-labelledby={tabId(idPrefix, format)}
+                {...PANEL_MOTION}
+                transition={transition}
+              >
+                <InstallSteps asset={asset} />
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

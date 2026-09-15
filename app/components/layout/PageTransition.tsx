@@ -1,15 +1,18 @@
 import { AnimatePresence, motion, useIsPresent, useReducedMotion } from 'motion/react';
 import { UNSAFE_DataRouterStateContext, useLocation, useNavigation, useOutlet } from 'react-router';
-import { useContext, useState, useSyncExternalStore, type PropsWithChildren } from 'react';
+import {
+  useContext,
+  useState,
+  useSyncExternalStore,
+  type PropsWithChildren,
+  type Ref,
+} from 'react';
 import type { Variants } from 'motion';
 
 import { REDUCED_TRANSITION, TRANSITIONS } from '~/lib/motion.shared';
 
 const exitTarget = () => ({
   opacity: 0,
-  position: 'absolute' as const,
-  left: 0,
-  right: 0,
   zIndex: 0,
   y: -window.scrollY,
 });
@@ -18,6 +21,7 @@ const PENDING_DELAY = 0.12;
 
 const pageVariants = {
   initial: { opacity: 0, y: 24, scale: 0.985 },
+  anchored: { opacity: 0, y: 0, scale: 1 },
   enter: {
     opacity: 1,
     y: 0,
@@ -42,6 +46,7 @@ const pageVariants = {
 
 const reducedPageVariants = {
   initial: { opacity: 0, y: 0, scale: 1 },
+  anchored: { opacity: 0, y: 0, scale: 1 },
   enter: { opacity: 1, y: 0, scale: 1, transition: REDUCED_TRANSITION },
   revealed: { opacity: 1, y: 0, scale: 1, transition: REDUCED_TRANSITION },
   pending: {
@@ -78,18 +83,30 @@ function FrozenRouter({ children }: PropsWithChildren) {
   );
 }
 
+interface PageProps {
+  ref?: Ref<HTMLDivElement>;
+  variants: Variants;
+  skipReveal: boolean;
+  anchored: boolean;
+  isPending: boolean;
+}
+
 function Page({
+  ref,
   variants,
   skipReveal,
+  anchored,
   isPending,
   children,
-}: PropsWithChildren<{ variants: Variants; skipReveal: boolean; isPending: boolean }>) {
+}: PropsWithChildren<PageProps>) {
   const [isRevealed, setIsRevealed] = useState(skipReveal);
+  const entrance = anchored ? 'anchored' : 'initial';
 
   return (
     <motion.div
+      ref={ref}
       variants={variants}
-      initial={skipReveal ? 'revealed' : 'initial'}
+      initial={skipReveal ? 'revealed' : entrance}
       animate={isPending ? 'pending' : isRevealed ? 'revealed' : 'enter'}
       exit="exit"
       onAnimationComplete={(definition) => {
@@ -106,16 +123,17 @@ export function PageTransition() {
   const shouldReduceMotion = useReducedMotion();
   const isHydrating = useIsHydrating();
   const navigation = useNavigation();
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   const outlet = useOutlet();
 
   const isPending = navigation.state === 'loading' && navigation.location.pathname !== pathname;
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="popLayout">
       <Page
         key={pathname}
         skipReveal={isHydrating}
+        anchored={hash !== ''}
         isPending={isPending}
         variants={shouldReduceMotion ? reducedPageVariants : pageVariants}
       >

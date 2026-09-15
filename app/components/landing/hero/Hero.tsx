@@ -9,6 +9,11 @@ import { ReleaseLink } from './ReleaseLink';
 import { HeroActions } from './HeroActions';
 import { HeroTitle } from './HeroTitle';
 
+const SECTION = cn(
+  'container-page flex flex-col gap-14 pt-8 pb-12',
+  'md:gap-20 md:pt-16 md:pb-8 lg:pb-10',
+);
+
 const INTRO = cn(
   'grid gap-8 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]',
   'lg:items-end lg:gap-16',
@@ -23,7 +28,7 @@ export function Hero({ release, platform }: HeroProps) {
   const { t } = useTranslation('landing');
 
   return (
-    <section className="container-page flex flex-col gap-14 pt-8 md:gap-20 md:pt-16">
+    <section className={SECTION}>
       <div className={INTRO}>
         <div className="flex flex-col items-start gap-8">
           {release && <ReleaseLink version={release.version} />}

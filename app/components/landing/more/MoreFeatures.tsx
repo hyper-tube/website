@@ -17,7 +17,7 @@ const FEATURES = [
   { id: 'videos', icon: PictureInPictureIcon },
   { id: 'live', icon: SensorsIcon },
   { id: 'controls', icon: KeyboardIcon },
-  { id: 'discord', icon: ExtensionIcon },
+  { id: 'plugins', icon: ExtensionIcon },
   { id: 'privacy', icon: ShieldIcon },
   { id: 'languages', icon: TranslateIcon },
   { id: 'openSource', icon: CodeIcon },

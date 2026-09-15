@@ -199,9 +199,9 @@
         "title": "Media keys and tray",
         "description": "Control music from your keyboard, your system's media controls or the tray."
       },
-      "discord": {
-        "title": "Discord status",
-        "description": "Show what you are listening to on your Discord profile, if you want to."
+      "plugins": {
+        "title": "Plugins",
+        "description": "A flexible plugin system, starting with Discord presence."
       },
       "privacy": {
         "title": "Private by default",

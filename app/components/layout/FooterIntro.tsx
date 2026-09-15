@@ -2,12 +2,17 @@ import { useTranslation } from 'react-i18next';
 
 import { SITE_NAME } from '~/lib/site.shared';
 import { Logo } from '~/components/ui/Logo';
+import { cn } from '~/lib/styles.shared';
 
-export function FooterIntro() {
+interface FooterIntroProps {
+  className?: string;
+}
+
+export function FooterIntro({ className }: FooterIntroProps) {
   const { t } = useTranslation();
 
   return (
-    <div className="flex max-w-sm flex-col gap-4">
+    <div className={cn('flex max-w-sm flex-col gap-4', className)}>
       <div className="flex items-center gap-3">
         <Logo className="size-10" />
         <span className="text-title-large">{SITE_NAME}</span>

@@ -33,7 +33,7 @@ export function Playground() {
   };
 
   return (
-    <section ref={ref} className="container-page flex flex-col gap-14 py-24 md:py-32">
+    <section ref={ref} className="container-page flex flex-col gap-10 section-spacing md:gap-14">
       <SectionIntro
         eyebrow={t('playground.eyebrow')}
         title={t('playground.title')}

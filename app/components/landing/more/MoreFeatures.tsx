@@ -27,10 +27,10 @@ export function MoreFeatures() {
   const { t } = useTranslation('landing');
 
   return (
-    <section className="container-page flex flex-col gap-14 py-24 md:py-32">
+    <section className="container-page flex flex-col gap-10 section-spacing md:gap-14">
       <SectionIntro eyebrow={t('more.eyebrow')} title={t('more.title')} />
 
-      <ul className="grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="grid gap-x-10 gap-y-8 sm:grid-cols-2 md:gap-y-12 lg:grid-cols-4">
         {FEATURES.map(({ id, icon }, index) => (
           <MoreFeature
             key={id}

@@ -27,7 +27,7 @@ export function DownloadBand({ release, platform }: DownloadBandProps) {
   if (!release) return null;
 
   return (
-    <section className="container-page py-12 md:py-20">
+    <section className="container-page section-spacing">
       <div className={BAND}>
         <BandMark />
 

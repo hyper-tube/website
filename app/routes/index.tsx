@@ -34,7 +34,7 @@ export function meta({ loaderData, location, matches }: Route.MetaArgs) {
 
 export default function LandingRoute({ loaderData: { release, platform } }: Route.ComponentProps) {
   return (
-    <div className="flex flex-col pb-12">
+    <div className="flex flex-col">
       <Hero release={release} platform={platform} />
       <Benchmarks />
       <Playground />

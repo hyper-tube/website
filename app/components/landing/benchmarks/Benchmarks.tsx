@@ -6,7 +6,7 @@ import { cn } from '~/lib/styles.shared';
 import { BenchmarkPanel } from './BenchmarkPanel';
 
 const SECTION = cn(
-  'container-page grid gap-12 py-24 md:py-32',
+  'container-page section-spacing grid gap-10 md:gap-12',
   'lg:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)] lg:gap-20',
 );
 
